@@ -13,6 +13,10 @@ class LoginPageNav extends Page {
     get loginButton (){
         return $$('a.menu-item.bp3-menu-item.bp3-popover-dismiss.intent-default')[0];
     }
+
+    get cookiesButton () {
+        return $('button#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll');
+    }
 }
 
 export default new LoginPageNav();
