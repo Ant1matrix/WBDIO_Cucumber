@@ -14,10 +14,10 @@ Given('the user is on login form page', async () =>{
     await LoginFormPage.cookiesButton.click();
 });
 
-When(/^user inputs their username and password$/, async () => {
+When(/^user inputs their (.*) and (.*)$/, async () => {
 	await LoginFormPage.emailField.addValue(forLoginForm.userLogin);
     await LoginFormPage.passField.addValue(forLoginForm.userPass);
-});
+}); //.* is a <regular expression>
 
 When('clicks on submit button', async () => {
     await LoginFormPage.submitBtn.click();
