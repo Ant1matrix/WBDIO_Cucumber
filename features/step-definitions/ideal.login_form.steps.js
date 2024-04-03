@@ -14,16 +14,16 @@ Given('the user is on login form page', async () =>{
     await LoginFormPage.cookiesButton.click();
 });
 
-When(/^user inputs their (.*) and (.*)$/, async () => {
-	await LoginFormPage.emailField.addValue(forLoginForm.userLogin);
-    await LoginFormPage.passField.addValue(forLoginForm.userPass);
+When(/^user inputs their (.*) and (.*)$/, async (username, password) => {
+	await LoginFormPage.emailField.addValue(username);
+    await LoginFormPage.passField.addValue(password);
 }); //.* is a <regular expression>
 
 When('clicks on submit button', async () => {
     await LoginFormPage.submitBtn.click();
 });
 
-Then('a warning message pops up', async () => {
-    await expect(LoginFormPage.alertMsg).toBeDisplayed();
-    await expect(LoginFormPage.alertMsg).toHaveText(forLoginForm.warnMsg);
+Then(/^a (.*) message pops up$/, async (message) => {
+	await expect(LoginFormPage.alertMsg).toBeDisplayed();
+    await expect(LoginFormPage.alertMsg).toHaveText(message);
 });
