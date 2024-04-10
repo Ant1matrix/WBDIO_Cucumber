@@ -17,6 +17,7 @@ Given ('the user is on item description page', async () =>
 });
 
 When('user clicks on addToBasket button', async () => {
+    await itemDescriptionPage.addButton.scrollIntoView();
     await itemDescriptionPage.addButton.click();
 });
 
