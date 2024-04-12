@@ -24,6 +24,10 @@ export const forAdd = {
     productPage: 'https://www.ideal.lv/iphone-15-pro',
 };
 
+export const forRemove = {
+    checkoutCartURL: 'https://www.ideal.lv/checkout/cart/',
+    productPage: 'https://www.ideal.lv/iphone-15-pro',
+};
 //class Index {
     //static = {
         //iDealMainPage: "https://www.ideal.lv/",

@@ -1,9 +1,9 @@
 import Page from "./page.js";
-import { forAdd } from "../resources/index.js";
+import { forAdd, forRemove } from "../resources/index.js";
 
 class BasketPage extends Page {
     open () {
-        super.open(forAdd.startPage);
+        super.open(forRemove.checkoutCartURL);
     }
 
     get iPhoneItm () {
