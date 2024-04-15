@@ -1,7 +1,7 @@
 import Page from "./page.js";
 import { forLoginNav } from "../resources/index.js";
 
-class LoginPageNav extends Page {
+class LandingPage extends Page {
     open () {
         super.open(forLoginNav.iDealMainPage);
     }
@@ -17,6 +17,14 @@ class LoginPageNav extends Page {
     get cookiesButton () {
         return $('button#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll');
     }
+
+    get searchButton () {
+        return $('#main-header ul.userhub li.link-search a');
+    }
+    
+    get searchInput () {
+        return $('div.search-desktop label input[name="q"]');
+    }
 }
 
-export default new LoginPageNav();
+export default new LandingPage();

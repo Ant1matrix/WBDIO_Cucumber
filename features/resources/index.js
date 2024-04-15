@@ -1,6 +1,5 @@
 export const forSearch = {
-    iDealMainPage:'https://www.ideal.lv/',
-    homeTitle: 'iDeal - Front page',
+    catalogueUrliPhone15Pro: 'https://www.ideal.lv/catalogsearch/result/?q=iPhone+15+Pro',
 };
 
 export const forLoginNav = {
