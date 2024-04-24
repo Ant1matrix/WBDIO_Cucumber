@@ -27,12 +27,3 @@ export const forRemove = {
     checkoutCartURL: 'https://www.ideal.lv/checkout/cart/',
     productPage: 'https://www.ideal.lv/iphone-15-pro',
 };
-//class Index {
-    //static = {
-        //iDealMainPage: "https://www.ideal.lv/",
-        //homeTitle: 'iDeal - Front page',
-        //loginURL: 'https://www.ideal.lv/customer/account/login/referer/aHR0cHM6Ly93d3cuaWRlYWwubHYv/',
-    //};
-//}
-
-//export default new Index();
